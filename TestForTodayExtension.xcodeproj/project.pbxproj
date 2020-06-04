@@ -16,6 +16,14 @@
 		3401DB9724889E01009B116E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401DB9624889E01009B116E /* main.m */; };
 		3401DBA124889E01009B116E /* TestForTodayExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401DBA024889E01009B116E /* TestForTodayExtensionTests.m */; };
 		3401DBAC24889E01009B116E /* TestForTodayExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401DBAB24889E01009B116E /* TestForTodayExtensionUITests.m */; };
+		3401DBD52488A64F009B116E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3401DBBF24889E54009B116E /* NotificationCenter.framework */; };
+		3401DBD92488A64F009B116E /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401DBD82488A64F009B116E /* TodayViewController.m */; };
+		3401DBDC2488A64F009B116E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3401DBDA2488A64F009B116E /* MainInterface.storyboard */; };
+		3401DBE02488A64F009B116E /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3401DBD42488A64F009B116E /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3401DC0B2488E931009B116E /* UserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3401DC0A2488E931009B116E /* UserInfoView.m */; };
+		3401DC1B2488EABD009B116E /* TodayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3401DC122488EABD009B116E /* TodayKit.framework */; };
+		3401DC272488EABD009B116E /* TodayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3401DC122488EABD009B116E /* TodayKit.framework */; };
+		3401DC282488EABD009B116E /* TodayKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3401DC122488EABD009B116E /* TodayKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +41,60 @@
 			remoteGlobalIDString = 3401DB8024889DFF009B116E;
 			remoteInfo = TestForTodayExtension;
 		};
+		3401DBDE2488A64F009B116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3401DB7924889DFF009B116E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3401DBD32488A64F009B116E;
+			remoteInfo = TodayExtension;
+		};
+		3401DC1C2488EABD009B116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3401DB7924889DFF009B116E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3401DC112488EABD009B116E;
+			remoteInfo = TodayKit;
+		};
+		3401DC1E2488EABD009B116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3401DB7924889DFF009B116E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3401DB8024889DFF009B116E;
+			remoteInfo = TestForTodayExtension;
+		};
+		3401DC252488EABD009B116E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3401DB7924889DFF009B116E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3401DC112488EABD009B116E;
+			remoteInfo = TodayKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3401DBCF24889E54009B116E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3401DBE02488A64F009B116E /* TodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC052488E679009B116E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3401DC282488EABD009B116E /* TodayKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3401DB8124889DFF009B116E /* TestForTodayExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForTodayExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +115,18 @@
 		3401DBA724889E01009B116E /* TestForTodayExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForTodayExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3401DBAB24889E01009B116E /* TestForTodayExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestForTodayExtensionUITests.m; sourceTree = "<group>"; };
 		3401DBAD24889E01009B116E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3401DBBF24889E54009B116E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3401DBD42488A64F009B116E /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3401DBD72488A64F009B116E /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		3401DBD82488A64F009B116E /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		3401DBDB2488A64F009B116E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3401DBDD2488A64F009B116E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3401DBE42488C23F009B116E /* TestForTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestForTodayExtension.entitlements; sourceTree = "<group>"; };
+		3401DBE52488C24E009B116E /* TodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayExtension.entitlements; sourceTree = "<group>"; };
+		3401DC092488E931009B116E /* UserInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoView.h; sourceTree = "<group>"; };
+		3401DC0A2488E931009B116E /* UserInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoView.m; sourceTree = "<group>"; };
+		3401DC122488EABD009B116E /* TodayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TodayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3401DC1A2488EABD009B116E /* TodayKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3401DC272488EABD009B116E /* TodayKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +152,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3401DBD12488A64F009B116E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3401DBD52488A64F009B116E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC0F2488EABD009B116E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC172488EABD009B116E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3401DC1B2488EABD009B116E /* TodayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +184,8 @@
 				3401DB8324889DFF009B116E /* TestForTodayExtension */,
 				3401DB9F24889E01009B116E /* TestForTodayExtensionTests */,
 				3401DBAA24889E01009B116E /* TestForTodayExtensionUITests */,
+				3401DBD62488A64F009B116E /* TodayExtension */,
+				3401DBBE24889E53009B116E /* Frameworks */,
 				3401DB8224889DFF009B116E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +196,9 @@
 				3401DB8124889DFF009B116E /* TestForTodayExtension.app */,
 				3401DB9C24889E01009B116E /* TestForTodayExtensionTests.xctest */,
 				3401DBA724889E01009B116E /* TestForTodayExtensionUITests.xctest */,
+				3401DBD42488A64F009B116E /* TodayExtension.appex */,
+				3401DC122488EABD009B116E /* TodayKit.framework */,
+				3401DC1A2488EABD009B116E /* TodayKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +206,7 @@
 		3401DB8324889DFF009B116E /* TestForTodayExtension */ = {
 			isa = PBXGroup;
 			children = (
+				3401DBE42488C23F009B116E /* TestForTodayExtension.entitlements */,
 				3401DB8424889DFF009B116E /* AppDelegate.h */,
 				3401DB8524889DFF009B116E /* AppDelegate.m */,
 				3401DB8724889DFF009B116E /* SceneDelegate.h */,
@@ -115,6 +218,8 @@
 				3401DB9224889E01009B116E /* LaunchScreen.storyboard */,
 				3401DB9524889E01009B116E /* Info.plist */,
 				3401DB9624889E01009B116E /* main.m */,
+				3401DC092488E931009B116E /* UserInfoView.h */,
+				3401DC0A2488E931009B116E /* UserInfoView.m */,
 			);
 			path = TestForTodayExtension;
 			sourceTree = "<group>";
@@ -137,7 +242,37 @@
 			path = TestForTodayExtensionUITests;
 			sourceTree = "<group>";
 		};
+		3401DBBE24889E53009B116E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3401DBBF24889E54009B116E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3401DBD62488A64F009B116E /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3401DBE52488C24E009B116E /* TodayExtension.entitlements */,
+				3401DBD72488A64F009B116E /* TodayViewController.h */,
+				3401DBD82488A64F009B116E /* TodayViewController.m */,
+				3401DBDA2488A64F009B116E /* MainInterface.storyboard */,
+				3401DBDD2488A64F009B116E /* Info.plist */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3401DC0D2488EABD009B116E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3401DB8024889DFF009B116E /* TestForTodayExtension */ = {
@@ -147,10 +282,14 @@
 				3401DB7D24889DFF009B116E /* Sources */,
 				3401DB7E24889DFF009B116E /* Frameworks */,
 				3401DB7F24889DFF009B116E /* Resources */,
+				3401DBCF24889E54009B116E /* Embed App Extensions */,
+				3401DC052488E679009B116E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3401DBDF2488A64F009B116E /* PBXTargetDependency */,
+				3401DC262488EABD009B116E /* PBXTargetDependency */,
 			);
 			name = TestForTodayExtension;
 			productName = TestForTodayExtension;
@@ -193,6 +332,60 @@
 			productReference = 3401DBA724889E01009B116E /* TestForTodayExtensionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		3401DBD32488A64F009B116E /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3401DBE12488A64F009B116E /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				3401DBD02488A64F009B116E /* Sources */,
+				3401DBD12488A64F009B116E /* Frameworks */,
+				3401DBD22488A64F009B116E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = 3401DBD42488A64F009B116E /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3401DC112488EABD009B116E /* TodayKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3401DC292488EABD009B116E /* Build configuration list for PBXNativeTarget "TodayKit" */;
+			buildPhases = (
+				3401DC0D2488EABD009B116E /* Headers */,
+				3401DC0E2488EABD009B116E /* Sources */,
+				3401DC0F2488EABD009B116E /* Frameworks */,
+				3401DC102488EABD009B116E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayKit;
+			productName = TodayKit;
+			productReference = 3401DC122488EABD009B116E /* TodayKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3401DC192488EABD009B116E /* TodayKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3401DC2C2488EABD009B116E /* Build configuration list for PBXNativeTarget "TodayKitTests" */;
+			buildPhases = (
+				3401DC162488EABD009B116E /* Sources */,
+				3401DC172488EABD009B116E /* Frameworks */,
+				3401DC182488EABD009B116E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3401DC1D2488EABD009B116E /* PBXTargetDependency */,
+				3401DC1F2488EABD009B116E /* PBXTargetDependency */,
+			);
+			name = TodayKitTests;
+			productName = TodayKitTests;
+			productReference = 3401DC1A2488EABD009B116E /* TodayKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +403,16 @@
 						TestTargetID = 3401DB8024889DFF009B116E;
 					};
 					3401DBA624889E01009B116E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 3401DB8024889DFF009B116E;
+					};
+					3401DBD32488A64F009B116E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3401DC112488EABD009B116E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3401DC192488EABD009B116E = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = 3401DB8024889DFF009B116E;
 					};
@@ -231,6 +434,9 @@
 				3401DB8024889DFF009B116E /* TestForTodayExtension */,
 				3401DB9B24889E01009B116E /* TestForTodayExtensionTests */,
 				3401DBA624889E01009B116E /* TestForTodayExtensionUITests */,
+				3401DBD32488A64F009B116E /* TodayExtension */,
+				3401DC112488EABD009B116E /* TodayKit */,
+				3401DC192488EABD009B116E /* TodayKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +466,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3401DBD22488A64F009B116E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3401DBDC2488A64F009B116E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC102488EABD009B116E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC182488EABD009B116E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,6 +498,7 @@
 				3401DB8C24889DFF009B116E /* ViewController.m in Sources */,
 				3401DB8624889DFF009B116E /* AppDelegate.m in Sources */,
 				3401DB9724889E01009B116E /* main.m in Sources */,
+				3401DC0B2488E931009B116E /* UserInfoView.m in Sources */,
 				3401DB8924889DFF009B116E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +519,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3401DBD02488A64F009B116E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3401DBD92488A64F009B116E /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC0E2488EABD009B116E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3401DC162488EABD009B116E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -302,6 +553,26 @@
 			isa = PBXTargetDependency;
 			target = 3401DB8024889DFF009B116E /* TestForTodayExtension */;
 			targetProxy = 3401DBA824889E01009B116E /* PBXContainerItemProxy */;
+		};
+		3401DBDF2488A64F009B116E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3401DBD32488A64F009B116E /* TodayExtension */;
+			targetProxy = 3401DBDE2488A64F009B116E /* PBXContainerItemProxy */;
+		};
+		3401DC1D2488EABD009B116E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3401DC112488EABD009B116E /* TodayKit */;
+			targetProxy = 3401DC1C2488EABD009B116E /* PBXContainerItemProxy */;
+		};
+		3401DC1F2488EABD009B116E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3401DB8024889DFF009B116E /* TestForTodayExtension */;
+			targetProxy = 3401DC1E2488EABD009B116E /* PBXContainerItemProxy */;
+		};
+		3401DC262488EABD009B116E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3401DC112488EABD009B116E /* TodayKit */;
+			targetProxy = 3401DC252488EABD009B116E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -320,6 +591,14 @@
 				3401DB9324889E01009B116E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3401DBDA2488A64F009B116E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3401DBDB2488A64F009B116E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -439,7 +718,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestForTodayExtension/TestForTodayExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FSX6RWLX2;
 				INFOPLIST_FILE = TestForTodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +736,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestForTodayExtension/TestForTodayExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FSX6RWLX2;
 				INFOPLIST_FILE = TestForTodayExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,6 +822,130 @@
 			};
 			name = Release;
 		};
+		3401DBE22488A64F009B116E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FSX6RWLX2;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiketalks.TestForTodayExtension.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3401DBE32488A64F009B116E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TodayExtension/TodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FSX6RWLX2;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiketalks.TestForTodayExtension.TodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3401DC2A2488EABD009B116E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4FSX6RWLX2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TodayKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiketalks.TodayKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3401DC2B2488EABD009B116E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4FSX6RWLX2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = TodayKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiketalks.TodayKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3401DC2D2488EABD009B116E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodayKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiketalks.TodayKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestForTodayExtension.app/TestForTodayExtension";
+			};
+			name = Debug;
+		};
+		3401DC2E2488EABD009B116E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TodayKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yiketalks.TodayKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestForTodayExtension.app/TestForTodayExtension";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -574,6 +981,33 @@
 			buildConfigurations = (
 				3401DBB724889E01009B116E /* Debug */,
 				3401DBB824889E01009B116E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3401DBE12488A64F009B116E /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3401DBE22488A64F009B116E /* Debug */,
+				3401DBE32488A64F009B116E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3401DC292488EABD009B116E /* Build configuration list for PBXNativeTarget "TodayKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3401DC2A2488EABD009B116E /* Debug */,
+				3401DC2B2488EABD009B116E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3401DC2C2488EABD009B116E /* Build configuration list for PBXNativeTarget "TodayKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3401DC2D2488EABD009B116E /* Debug */,
+				3401DC2E2488EABD009B116E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
